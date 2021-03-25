@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import Landing from './src/pages/Landing/index'
+import AppStack from './src/routes/AppStack'
 
 import AppLoading from 'expo-app-loading';
 import {Poppins_400Regular, Poppins_600SemiBold, useFonts} from '@expo-google-fonts/poppins'
@@ -19,7 +20,7 @@ export default function App() {
   } else {
     return (
       <>
-        <Landing/>
+        <AppStack/>
         <StatusBar style="light" />
       </>
     );
